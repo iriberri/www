@@ -8,7 +8,8 @@ install:
  - pip install tox-travis
  - eval "$(gimme 1.7)"
  - go get github.com/ValeLint/vale
- - NOKOGIRI_USE_SYSTEM_LIBRARIES="True" bundler install html-proofer
+ - which gem
+ - NOKOGIRI_USE_SYSTEM_LIBRARIES="True" gem install html-proofer
 script:
  - htmlproofer -v
  - tox

@@ -9,7 +9,7 @@ install:
  - eval "$(gimme 1.7)"
  - go get github.com/ValeLint/vale
  - which gem
- - NOKOGIRI_USE_SYSTEM_LIBRARIES="True" gem install html-proofer
+ - gem install html-proofer
 script:
  - htmlproofer -v
  - tox

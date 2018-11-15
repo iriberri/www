@@ -13,8 +13,8 @@ install:
  - echo $PATH
  - gem which html-proofer
  - which gem
- - which html-proofer
  - which rvm
+ - which htmlproofer
 script:
  - htmlproofer -v
  - tox
